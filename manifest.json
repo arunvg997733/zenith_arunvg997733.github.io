@@ -1,6 +1,6 @@
 {
-    "name": "zenithacademyadmin",
-    "short_name": "zenithacademyadmin",
+    "name": "sqflite_10",
+    "short_name": "sqflite_10",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
