@@ -10,70 +10,29 @@
 
     For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
   -->
   <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="sqflite_10">
+  <meta name="apple-mobile-web-app-title" content="testweb">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>sqflite_10</title>
+  <title>testweb</title>
   <link rel="manifest" href="manifest.json">
-
-  <!-- Flutter Service Worker -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('flutter_service_worker.js?v="2778661538"');
-    }
-  </script>
-
-  <!-- This script adds the Flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
 </head>
 <body>
-  <script>
-    (async () => {
-      // Initialize Flutter Web app
-      const appEntrypoint = await FlutterLoader.load({
-        entrypoint: "main.dart.js",
-      });
-      appEntrypoint();
-    })();
-  </script>
-
-  <!-- Firebase Initialization -->
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js" defer></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js" defer></script>
-  <script type="module">
-    // Firebase Configuration
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    
-    const firebaseConfig = {
-      apiKey: "AIzaSyBkxkKAUCzkH7IvT0ThmaByqsW5jrUQpe8",
-      authDomain: "flutter-firebase-8defc.firebaseapp.com",
-      projectId: "flutter-firebase-8defc",
-      storageBucket: "flutter-firebase-8defc.appspot.com",
-      messagingSenderId: "872918508957",
-      appId: "1:872918508957:web:b4cac826768d415bc87b74"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-  </script>
-
-  <!-- Force HTML Renderer -->
-  <script>
-    window.flutterWebRenderer = "html";
-  </script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

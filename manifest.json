@@ -1,6 +1,6 @@
 {
-    "name": "sqflite_10",
-    "short_name": "sqflite_10",
+    "name": "testweb",
+    "short_name": "testweb",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
